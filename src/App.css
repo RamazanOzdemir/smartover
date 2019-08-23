@@ -1,33 +1,157 @@
-.App {
-  text-align: center;
+.navbar-top{
+  display : flex;
+  justify-content : space-between;
+  background-color : #001D30;
+  font : normal 1.04rem/1.30rem 'Source Sans Pro';
+  color : #FFFFFF;
+  height : 3.65rem;
+  max-width: 100%;
+  margin: 0px;
+  align-items : center;
+  padding : 0 18rem;
+}
+.logo{
+  height : 2.6em;
+}
+.navbar-bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.65rem;
+  max-width: 100%;
+
+}
+.navbar-bottom ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0
+}
+.navbar-bottom li{
+  display : inline-block;
+  text-decoration: none;
+  margin: 0 1.3rem;
+
+  
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+
+.navbar-bottom .navLink {
+  font : bold 1.44rem/1.46rem 'Source Sans Pro';
+
+  opacity: 0.5;
+  letter-spacing : 0.25px;
+  color : #0E273B;  
+  text-decoration: none;
+  cursor: pointer;
+}
+.navbar-bottom .navLink:visited{
+  opacity: 1;
+}
+.navbar-bottom .active{
+  opacity: 1;
+}
+.tooltip{
+  position: relative;
+}
+.tooltiptext {
+  visibility: hidden;
+  width: 14.12rem;
+  height: 12.73rem;
+  background-color: white;
+  transition: visibility 0.5s;
+
+  position: absolute;
+  z-index: 10;
+  top: 150%;
+  left: 0rem;
+  
+}
+.tooltip .link{
+  font: Bold 1.14rem/1.46rem 'Source Sans Pro';
+  letter-spacing: 0.25px;
+  color: #0E273B;
+  opacity: 0.5;
+  padding: 0.1rem 1.04rem;
+  margin: 0.83rem 0.96rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.tooltiptext .link:hover {
+  opacity: 1;
+  border-width: 0 0 0 3px;
+  border-color: rgb(43, 132, 235);
+  border-style: solid;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 20%;
+  margin-left: -0.45rem;
+  border-width: 0.45rem;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.mainImage{
+  object-fit: fill;
+  height: 26.04rem;
+  width: 100%;
+}
+.mainContent{
+  margin-top : 1.56rem;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+.content{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 3.25rem;
+  text-align: center;
+  width: 16.2rem;
+  
+}
+.content img{
+  margin: auto; 
+  margin-bottom: 0px;
+  border-radius: 50%;
+  height: 8.3rem;
+  width: 8.3rem;
+}
+.content h3{
+font-family: 'Source Sans Pro';
+line-height: 2.6rem;
+font-size: 2.08rem;
+font-weight: normal;
+letter-spacing: 0.27px;
+color: #000000;
+margin-top : 1.3rem;
+margin-bottom: 0;
+
+
+}
+.content .par{
+  width: 16.2rem;
+  height: 5rem;
+  overflow: hidden;
+  margin-top: 1.3rem;
+  margin-bottom: 2.96rem;
+ }
+.par p{
+  font: normal 0.94rem/1.25rem 'Source Sans Pro';
+  letter-spacing: 0.15px;
+  color: #000000;
+  margin: 0px;
+  padding: 0px;
+
+}
+.product{
+  height: 49.06rem;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
